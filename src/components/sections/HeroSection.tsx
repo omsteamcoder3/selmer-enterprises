@@ -23,19 +23,16 @@ export default function HeroSection() {
           {/* Left Content */}
           <div className="text-white space-y-6">
             <div className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-              <p className="text-sm font-semibold">Established 2013 • Partnership Firm 2024</p>
+              <p className="text-sm font-semibold">Established 2016 • Partnership Firm 2024</p>
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance">
               Your Trusted Partner in <span className="text-[rgb(66,194,255)]">Real Estate Success</span>
             </h1>
+<h1 className="w-full whitespace-nowrap text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-wide text-center">
+  0% Brokerage* . 100% Delight
+</h1>
 
-            <p className="text-lg md:text-xl text-[rgb(207,238,255)] leading-relaxed max-w-2xl">
-              Founded with a vision to provide comprehensive <br />
-              real estate solutions in Chennai. We specialize <br />
-              in property buying, selling, management, <br />
-              investment advisory, and more.
-            </p>
 
             <div className="flex flex-wrap gap-4 pt-4">
               <Link

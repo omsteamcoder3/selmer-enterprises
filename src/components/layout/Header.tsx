@@ -3,7 +3,7 @@
 import Link from "next/link"
 import { useState, useEffect } from "react"
 import { usePathname } from "next/navigation"
-
+import Image from "next/image"
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -35,20 +35,45 @@ export default function Header() {
         isScrolled ? "bg-[rgba(23,42,77,1)] shadow-lg" : "bg-[rgba(23,42,77,1)]"
       }`}
     >
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="sm:max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" onClick={scrollToTop} className="flex items-center gap-3 cursor-pointer group">
-            <div className="relative h-12 w-12 rounded-full bg-gradient-to-br from-[rgb(30,136,229)] to-[rgb(66,194,255)] flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-              <svg className="h-7 w-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-              </svg>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-[rgba(255,255,255,1)] leading-tight">Selmer Enterprises</span>
-              <span className="text-xs text-[rgb(30,136,229)] font-semibold">Pvt Ltd</span>
-            </div>
-          </Link>
+<Link
+  href="/"
+  className="flex items-center space-x-2 sm:space-x-3 cursor-pointer group"
+>
+  {/* Icon / Logo */}
+  <div className="flex items-center justify-center w-32 h-34 sm:w-48 sm:h-40 md:w-56 md:h-44">
+    <Image
+      src="/logo.webp"
+      alt="Aavainba Logo"
+      width={200}
+      height={200}
+      className="w-full h-full object-contain"
+      priority
+      style={{
+        filter: `
+          drop-shadow(-2px 0 #ffffffff)
+          drop-shadow(2px 0 #ffffffff)
+          drop-shadow(0 -2px #ffffffff)
+          drop-shadow(0 2px #ffffffff)
+        `,
+      }}
+    />
+  </div>
+
+  {/* Text */}
+  <div className="flex flex-col justify-center h-20 sm:h-24 md:h-28 w-full text-left">
+    <h1 className="text-lg sm:text-xl lg:text-2xl font-bold tracking-wide font-playfair text-white w-full flex items-start sm:mt-0 mt-0">
+      Selmer Enterprises
+    </h1>
+    <p className="text-[10px] sm:text-md lg:text-xs font-md uppercase font-[Raleway] text-white w-full">
+      Pvt Ltd
+    </p>
+  </div>
+</Link>
+
+
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">

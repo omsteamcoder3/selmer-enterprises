@@ -35,7 +35,7 @@ export default function AboutSection() {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold text-[rgb(30,136,229)] leading-tight text-balance">
-              Comprehensive Real Estate Solutions Since 2013
+              Comprehensive Real Estate Solutions Since 2016
             </h2>
 
             <p className="text-base text-[rgba(235,235,235,1)] leading-relaxed">

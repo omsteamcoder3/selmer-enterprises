@@ -1,5 +1,5 @@
 import Link from "next/link"
-
+import Image from "next/image"
 export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" })
@@ -9,28 +9,50 @@ export default function Footer() {
     <footer className="relative bg-[rgba(23,42,77,1)] text-white pt-16 pb-8">
  
 
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
-          <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-full bg-gradient-to-br from-[rgb(66,194,255)] to-[rgb(30,136,229)] flex items-center justify-center shadow-lg">
-                <svg className="h-7 w-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
-                </svg>
-              </div>
-              <div>
-                <h3 className="text-lg font-bold">Selmer Enterprises</h3>
-                <p className="text-xs text-[rgb(207,238,255)]">Pvt Ltd</p>
-              </div>
-            </div>
-            <p className="text-sm text-[rgb(207,238,255)] leading-relaxed">
-              Your Trusted Partner in Real Estate Success since 2013
-            </p>
-          </div>
+<Link
+  href="/"
+  className="flex items-center space-x-2 sm:space-x-3 cursor-pointer group"
+>
+  {/* Icon / Logo */}
+  <div className="flex items-center justify-center w-16 h-16 sm:w-28 sm:h-28 md:w-32 md:h-32">
+    <Image
+      src="/logo.webp"
+      alt="Selmer Enterprises Logo"
+      width={200}
+      height={200}
+      className="w-full h-full object-contain"
+      priority
+      style={{
+        filter: `
+          drop-shadow(-2px 0 #ffffffff)
+          drop-shadow(2px 0 #ffffffff)
+          drop-shadow(0 -2px #ffffffff)
+          drop-shadow(0 2px #ffffffff)
+        `,
+      }}
+    />
+  </div>
+
+  {/* Text */}
+  <div className="flex flex-col justify-center w-full text-left">
+    <h1 className="text-lg sm:text-xl lg:text-2xl font-bold tracking-wide font-playfair text-white">
+      Selmer Enterprises
+    </h1>
+    <p className="text-[10px] sm:text-md lg:text-xs uppercase font-[Raleway] text-white">
+      Pvt Ltd
+    </p>
+    <p className="text-sm sm:text-base text-[rgb(207,238,255)] leading-relaxed mt-1">
+      Your Trusted Partner in Real Estate Success since 2016
+    </p>
+  </div>
+</Link>
+
 
           {/* Quick Links */}
-          <div>
+          <div className="sm:ml-20 ml-0">
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {["Home", "About", "Services", "Projects", "Contact"].map((item) => (

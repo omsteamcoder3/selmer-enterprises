@@ -151,10 +151,10 @@ export default function ProjectsPage() {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             {[
-              { number: "1000+", label: "Properties Sold" },
-              { number: "500+", label: "Happy Clients" },
-              { number: "50+", label: "Projects Completed" },
-              { number: "11+", label: "Years Experience" },
+              { number: "60,000+", label: "Properties Sold" },
+              { number: "60000+", label: "Happy Clients" },
+              { number: "120+", label: "Projects Completed" },
+              { number: "9", label: "Years Experience" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-5xl font-bold text-[rgb(11,92,173)] mb-2">{stat.number}</div>

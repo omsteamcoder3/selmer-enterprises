@@ -12,7 +12,7 @@ export default function AboutPage() {
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-balance">About Selmer Enterprises Pvt Ltd</h1>
             <p className="text-xl text-[rgb(207,238,255)] leading-relaxed">
-              Your Trusted Partner in Real Estate Success Since 2013
+              Your Trusted Partner in Real Estate Success Since 2016
             </p>
           </div>
         </div>
@@ -169,7 +169,7 @@ export default function AboutPage() {
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
                   <div className="h-16 w-16 rounded-full bg-gradient-to-br from-[rgb(30,136,229)] to-[rgb(66,194,255)] flex items-center justify-center text-white font-bold text-lg">
-                    2013
+                    2016
                   </div>
                 </div>
                 <div className="bg-white rounded-2xl p-6 flex-1 shadow-lg">
@@ -181,19 +181,6 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              <div className="flex gap-6">
-                <div className="flex-shrink-0">
-                  <div className="h-16 w-16 rounded-full bg-gradient-to-br from-[rgb(30,136,229)] to-[rgb(66,194,255)] flex items-center justify-center text-white font-bold text-lg">
-                    2024
-                  </div>
-                </div>
-                <div className="bg-white rounded-2xl p-6 flex-1 shadow-lg">
-                  <h3 className="text-xl font-bold text-[rgb(11,92,173)] mb-2">Partnership Firm</h3>
-                  <p className="text-[rgb(85,85,85)]">
-                    Evolved into a Partnership Firm, expanding our services and strengthening our commitment to clients.
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </div>
