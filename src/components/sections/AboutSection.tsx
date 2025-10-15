@@ -2,9 +2,9 @@ import Link from "next/link"
 
 export default function AboutSection() {
   return (
-    <section className="-mt-20 relative h-[900px] py-20 bg-gradient-to-b from-transparent to-[rgba(200,234,255,1)] overflow-hidden z-20">
+    <section className="-mt-15 relative sm:h-[900px] h-full  py-20 bg-gradient-to-b from-transparent to-[rgba(200,234,255,1)] overflow-hidden z-20">
       {/* Skewed Background */}
-      <div className="absolute inset-0 bg-[rgba(19,42,87,1)] origin-top  "></div>
+      <div className="absolute inset-0 bg-[rgba(19,42,87,1)] origin-top skew-y-4 "></div>
 
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -15,11 +15,11 @@ export default function AboutSection() {
 
 
   {/* Image inside skewed frame but stays upright */}
-  <div className="relative w-130 h-120 skew-y-5 border-4 border-[rgb(66,194,255)] overflow-hidden -mt-80">
+  <div className="relative sm:w-130 sm:h-120 w-72 h-60 skew-y-5 border-4 border-[rgb(66,194,255)] overflow-hidden sm:-mt-80">
     <img
       src="/images/d1.webp"
       alt="About Selmer Enterprises"
-      className="w-140 h-190 -mt-35 object-contain -skew-y-5 overflow-hidden transform scale-105 shadow-2xl "
+      className="w-140 h-190 sm:-mt-35 -mt-65 object-contain -skew-y-5 overflow-hidden transform scale-105 shadow-2xl "
     />
   </div>
 </div>
@@ -70,17 +70,11 @@ export default function AboutSection() {
                   <div className="h-8 w-8 rounded-full bg-[rgb(30,136,229)] flex items-center justify-center text-white font-bold flex-shrink-0">
                     {item.icon}
                   </div>
-                  <span className="text-sm font-semibold text-[rgb(11,92,173)]">{item.text}</span>
+                  <span className="text-sm font-semibold text-[rgba(255,255,255,1)]">{item.text}</span>
                 </div>
               ))}
             </div>
 
-            <Link
-              href="/about"
-              className="inline-block px-8 py-4 bg-[rgb(30,136,229)] text-white rounded-full font-bold hover:bg-[rgb(11,92,173)] transition-all duration-300 shadow-lg hover:scale-105 cursor-pointer"
-            >
-              Learn More About Us
-            </Link>
           </div>
         </div>
       </div>

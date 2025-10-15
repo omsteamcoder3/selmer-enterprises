@@ -22,6 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <head>
+        {/* Favicon */}
+        <link rel="icon" href="/logo.webp" />
+        </head>
       <body className="font-sans antialiased">
         <PageLoader />
         <Suspense fallback={<div>Loading...</div>}>

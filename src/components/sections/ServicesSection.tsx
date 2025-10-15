@@ -70,7 +70,7 @@ export default function ServicesSection() {
   ]
 
   return (
-      <section className=" relative h-[1100px] py-20 bg-gradient-to-b from-[rgba(19,42,87,1)] to-[rgba(210,238,255,1)] overflow-hidden">
+      <section className=" relative sm:h-[1100px] h-full  py-20 bg-gradient-to-b from-[rgba(19,42,87,1)] to-[rgba(210,238,255,1)] overflow-hidden">
       {/* Skewed Background */}
       <div className="absolute inset-0 bg-[rgba(200,234,255,1)] origin-top skew-y-4 "></div>
       {/* Background Decorations */}

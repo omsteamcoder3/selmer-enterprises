@@ -39,7 +39,7 @@ export default function ProjectsSection() {
   ]
 
   return (
-    <section className=" relative h-[1100px] py-20 bg-gradient-to-b from-white to-[rgb(11,92,173)] overflow-hidden">
+    <section className=" relative sm:h-[1100px] h-full py-20 bg-gradient-to-b from-white to-[rgb(11,92,173)] overflow-hidden">
       {/* Skewed Background */}
       <div className="absolute inset-0 bg-white origin-top -skew-y-4 "></div>
       <div className="absolute top-20 left-10 h-96 w-96 rounded-full bg-[rgb(234,247,255)] opacity-50 blur-3xl"></div>
