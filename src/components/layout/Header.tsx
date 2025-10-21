@@ -40,13 +40,14 @@ export default function Header() {
           {/* Logo */}
 <Link
   href="/"
-  className="flex items-center space-x-2 sm:space-x-3 cursor-pointer group"
+  className="flex items-center cursor-pointer group"
 >
-  {/* Icon / Logo */}
-  <div className="flex items-center justify-center w-32 h-34 sm:w-48 sm:h-40 md:w-56 md:h-44">
+<div className="flex items-center ">
+  {/* Logo */}
+  <div className="w-32 h-34 sm:w-48 sm:h-40 md:w-56 md:h-44  -ml-8">
     <Image
       src="/logo.webp"
-      alt="Aavainba Logo"
+      alt="Selmer Logo"
       width={200}
       height={200}
       className="w-full h-full object-contain"
@@ -63,14 +64,13 @@ export default function Header() {
   </div>
 
   {/* Text */}
-  <div className="flex flex-col justify-center h-20 sm:h-24 md:h-28 w-full text-left">
-    <h1 className="text-lg sm:text-xl lg:text-2xl font-bold tracking-wide font-playfair text-white w-full flex items-start sm:mt-0 mt-0">
-      Selmer Enterprises
+  <div className="flex flex-col justify-center w-full sm:-ml-14 -ml-8">
+    <h1 className="text-sm sm:text-xl lg:text-2xl font-bold tracking-wide font-playfair text-white m-0 p-0">
+      Selmer Enterprises Pvt Ltd
     </h1>
-    <p className="text-[10px] sm:text-md lg:text-xs font-md uppercase font-[Raleway] text-white w-full">
-      Pvt Ltd
-    </p>
   </div>
+</div>
+
 </Link>
 
 
