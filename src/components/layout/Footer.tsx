@@ -16,11 +16,12 @@ export default function Footer() {
   href="/"
   className="flex items-center space-x-2 sm:space-x-3 cursor-pointer group"
 >
-  {/* Icon / Logo */}
-  <div className="flex items-center justify-center w-16 h-16 sm:w-28 sm:h-28 md:w-32 md:h-32">
+<div className="flex items-center sm:-mt-20 mt-0 ">
+  {/* Logo */}
+  <div className="w-32 h-34 sm:w-48 sm:h-40 md:w-56 md:h-44  -ml-8">
     <Image
       src="/logo.webp"
-      alt="Selmer Enterprises Logo"
+      alt="Selmer Logo"
       width={200}
       height={200}
       className="w-full h-full object-contain"
@@ -37,16 +38,16 @@ export default function Footer() {
   </div>
 
   {/* Text */}
-  <div className="flex flex-col justify-center w-full text-left">
-    <h1 className="text-lg sm:text-xl lg:text-2xl font-bold tracking-wide font-playfair text-white">
-      Selmer Enterprises
+  <div className="flex flex-col justify-center w-full sm:-ml-14 -ml-8">
+    <h1 className="text-sm sm:text-xl lg:text-lg font-bold tracking-wide font-playfair text-white m-0 p-0">
+      Selmer Enterprises Pvt Ltd
     </h1>
-    <p className="text-[10px] sm:text-md lg:text-xs uppercase font-[Raleway] text-white">
-      Pvt Ltd
-    </p>
+
+
     <p className="text-sm sm:text-base text-[rgb(207,238,255)] leading-relaxed mt-1">
       Your Trusted Partner in Real Estate Success since 2016
     </p>
+    </div>
   </div>
 </Link>
 
