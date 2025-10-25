@@ -214,6 +214,24 @@ export default function ContactPage() {
                         </span>
                       </a>
                     </div>
+{/* YouTube */}
+<div className="flex flex-col items-center text-center">
+  <a
+    href="https://youtube.com/@SelmerProperties"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex flex-col items-center gap-2 group"
+  >
+    <div className="h-14 w-14 sm:h-16 sm:w-16 rounded-full bg-gradient-to-br from-[#FF0000] to-[#FF4D4D] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+      <svg className="h-6 w-6 sm:h-7 sm:w-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M23.498 6.186a2.997 2.997 0 00-2.113-2.113C19.422 3.5 12 3.5 12 3.5s-7.422 0-9.385.573a2.997 2.997 0 00-2.113 2.113C0 8.149 0 12 0 12s0 3.851.502 5.814a2.997 2.997 0 002.113 2.113C4.578 20.5 12 20.5 12 20.5s7.422 0 9.385-.573a2.997 2.997 0 002.113-2.113C24 15.851 24 12 24 12s0-3.851-.502-5.814zM9.545 15.568V8.432l6.182 3.568-6.182 3.568z" />
+      </svg>
+    </div>
+    <span className="text-xs sm:text-sm text-[rgb(85,85,85)] group-hover:text-[#FF0000] transition-colors font-medium">
+      YouTube
+    </span>
+  </a>
+</div>
 
                     {/* LinkedIn */}
                     <div className="flex flex-col items-center text-center">
