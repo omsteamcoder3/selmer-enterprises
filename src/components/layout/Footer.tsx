@@ -39,9 +39,9 @@ export default function Footer() {
 
   {/* Text */}
   <div className="flex flex-col justify-center w-full sm:-ml-14 -ml-8">
-    <h1 className="text-sm sm:text-xl lg:text-lg font-bold tracking-wide font-playfair text-white m-0 p-0">
-      Selmer Enterprises Pvt Ltd
-    </h1>
+<h1 className="text-xl sm:text-xl lg:text-lg font-bold tracking-wide font-playfair text-white m-0 p-0 whitespace-nowrap">
+  Selmer Enterprises Pvt Ltd
+</h1>
 
 
     <p className="text-sm sm:text-base text-[rgb(207,238,255)] leading-relaxed mt-1">
